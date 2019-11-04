@@ -7,7 +7,6 @@ BLACK=0
 RED=1
 GREEN=2
 BLUE=3
-PURPLE=4
 
 class TriColor:
     def __init__(self,red,green,blue):
@@ -28,11 +27,16 @@ class TriColor:
             self.red.on()
             self.green.off()
             self.blue.off()
+        if color == GREEN:
+            self.red.off()
+            self.green.on()
+            self.blue.off()
         if color == BLUE:
             self.red.off()
             self.green.off()
             self.blue.on()
-        if color == PURPLE:
-            self.red.on()
-            self.green.off()
-            self.blue.on()
+
+#####################
+# eof - tricolor.py #
+#####################
+

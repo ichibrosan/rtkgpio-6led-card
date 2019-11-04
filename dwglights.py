@@ -60,7 +60,15 @@ class CLights:
 
     def count(self):
         x = 0
+        color = RED
         while(1):            
-            self.hextet(x,PURPLE)         
+            self.hextet(x,color)         
             x += 1
+            
+            color += 1
+            if color>BLUE:
+                color = RED
+            
+            
+            
             sleep(1)
